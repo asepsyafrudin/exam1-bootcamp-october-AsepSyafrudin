@@ -15,11 +15,9 @@ public class MatrixOperation {
                         result[i][j] = array1[i][j] + array2[i][j];
                     }
                 }
-            } else {
-                result = null;
             }
-
         }
+
         return  result;
     }
 
@@ -43,12 +41,8 @@ public class MatrixOperation {
                         }
                         result[i][j] = temp;
                     }
-
                 }
-            } else {
-                result = null;
             }
-
         }
 
         return result;
