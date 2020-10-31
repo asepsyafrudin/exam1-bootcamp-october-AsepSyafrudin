@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 public class MatrixOperationTest {
     MatrixOperation matrix = new MatrixOperation();
 
+    //test hasil dari pertambahan Matrix yang benar
     @Test
     public void testAdditionMatrixResult() {
         int[][] array1= {
@@ -27,6 +28,7 @@ public class MatrixOperationTest {
         assertEquals(11, action[1][1]);
     }
 
+    //test hasil dari pertambahan Matrix jika matrix nya tidak ada data
     @Test
     public void testAdditionMatrixAllNull() {
         int[][] array1= {};
@@ -36,6 +38,7 @@ public class MatrixOperationTest {
         assertNull(action);
     }
 
+    //test hasil dari pertambahan Matrix jika  matrix memiliki jumlah baris atay jumlah kolom berbeda
     @Test
     public void testAdditionalMatrixDifferentLength() {
         int[][] matrix1= {
@@ -51,6 +54,7 @@ public class MatrixOperationTest {
         assertNull(action);
     }
 
+    //test hasil dari perkalian Matrix yang benar
     @Test
     public void testMultiplicationMatrixResult() {
         int[][] matrix1 = {
@@ -73,6 +77,7 @@ public class MatrixOperationTest {
 
     }
 
+    //test hasil dari perkalian Matrix jika matrix tidak mempunyai data
     @Test
     public void testMultiplicityNullMatrix() {
         int[][] matrix1 = {
@@ -86,6 +91,7 @@ public class MatrixOperationTest {
         
     }
 
+    //test hasil dari perkalian Matrix jika memiliki perbedaan baris atau kolom tetapi masih memenuhi kaidah perkalian matrix
     @Test
     public void testMultiplicationDifferentRowButCanPairing() {
         int[][] matrix1 = {
@@ -109,6 +115,7 @@ public class MatrixOperationTest {
         assertEquals(9 , action[2][1]);
     }
 
+    //test hasil dari perkalian Matrix jika memiliki perbedaan baris atau kolom tetapi tidak memenuhi kaidah perkalian matrix
     @Test
     public void testMultiplicationDifferentRowButCanNotPairing() {
         int[][] matrix1 = {

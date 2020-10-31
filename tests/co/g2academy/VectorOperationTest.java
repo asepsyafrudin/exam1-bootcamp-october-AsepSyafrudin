@@ -7,6 +7,8 @@ import static org.junit.Assert.*;
 
 public class VectorOperationTest {
         VectorOperation vector = new VectorOperation();
+
+    //test hasil dari pertambahan vector yang benar
     @Test
     public void testVectorAdditionResult() {
         int[] vector1 = {1,2,3};
@@ -19,6 +21,7 @@ public class VectorOperationTest {
         assertEquals(9 , action[2]);
     }
 
+    //test hasil dari pertambahan vector yang memiliki perbedaan panjang
     @Test
     public void testVectorAdditionalDifferentLength() {
         int[] vector1 = {1,2};
@@ -27,6 +30,7 @@ public class VectorOperationTest {
        assertNull(action);
     }
 
+    //test hasil dari pertambahan vector dimana vektor tidak terdapat data apapun
     @Test
     public void testVectorAdditionalNullALLVector() {
         int[] vector1 = {};
@@ -35,6 +39,7 @@ public class VectorOperationTest {
         assertNull(action);
     }
 
+    //test hasil dari perkalian vector yang benar
     @Test
     public void testVectorMultiplicationResult() {
         int[] vector1 = {1,2,3};
@@ -47,6 +52,7 @@ public class VectorOperationTest {
         assertEquals(15, action[2]);
     }
 
+    //test hasil dari perkalian vector yang memiliki panjang yang berbeda
     @Test
     public void testVectorMultiplicationDifferentLength() {
         int[] vector1 = {1,2};
@@ -55,6 +61,7 @@ public class VectorOperationTest {
         assertNull(action);
     }
 
+    //test hasil dari perkalian vector dimana vektor tidak memiliki data apapun
     @Test
     public void testVectorMultiplicationNullAll() {
         int[] vector1 = {};
@@ -63,8 +70,9 @@ public class VectorOperationTest {
         assertNull(action);
     }
 
+    //test hasil dari perkalian vector dimana salah satu vektor tidak memiliki data apapun
     @Test
-    public void testVectorMultiplicityNull() {
+    public void testVectorMultiplicationNull() {
         int[] vector1 = {1,2,3};
         int[] vector2 = {};
         int[] action = vector.vectorMultiplication(vector1, vector2);
