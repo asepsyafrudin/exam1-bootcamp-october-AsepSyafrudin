@@ -22,7 +22,7 @@ public class MatrixOperation {
     }
 
 
-    public int[][] matrixMultiplicity(int[][] matrix1, int[][] matrix2) {
+    public int[][] matrixMultiplication(int[][] matrix1, int[][] matrix2) {
         int row1 = matrix1.length;
         int row2 = matrix2.length;
         int[][] result = null;

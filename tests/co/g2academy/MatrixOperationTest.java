@@ -63,7 +63,7 @@ public class MatrixOperationTest {
                 {3,3}
         };
 
-        int[][] action = matrix.matrixMultiplicity(matrix1, matrix2);
+        int[][] action = matrix.matrixMultiplication(matrix1, matrix2);
 
         assertNotNull(action);
         assertEquals(8 , action[0][0]);
@@ -81,7 +81,7 @@ public class MatrixOperationTest {
         int[][] matrix2 = {
         };
 
-        int[][] action = matrix.matrixMultiplicity(matrix1, matrix2);
+        int[][] action = matrix.matrixMultiplication(matrix1, matrix2);
         assertNull(action);
         
     }
@@ -99,7 +99,7 @@ public class MatrixOperationTest {
                 {3,3}
         };
 
-        int[][] action = matrix.matrixMultiplicity(matrix1, matrix2);
+        int[][] action = matrix.matrixMultiplication(matrix1, matrix2);
         assertNotNull(action);
         assertEquals(8 , action[0][0]);
         assertEquals(8 , action[0][1]);
@@ -123,7 +123,7 @@ public class MatrixOperationTest {
                 {3,3}
         };
 
-        int[][] action = matrix.matrixMultiplicity(matrix1, matrix2);
+        int[][] action = matrix.matrixMultiplication(matrix1, matrix2);
         assertNull(action);
     }
 }
